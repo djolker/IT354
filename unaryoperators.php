@@ -11,6 +11,27 @@
         <div class="col-md-12">
           <h4>Unary Operators</h4>
         </div>
+
+        <div class="col-md-8 panel">
+          <p>Unary Operators are operations used with only one operand (object
+            be operated on). They're used as quick ways to affect a variable while
+            keeping the code uncluttered and easy to read.</p>
+
+            <code>
+              var i = 0;<br>
+              i++;<br>
+              console.log(i);
+            </code>
+
+            <br><br>
+
+            <p>
+              Above, the variable *i* will return 1, as it's been affected by an
+              unary operator *++*.
+            </p>
+
+
+        </div>
       </div>
     </div>
   </body>
