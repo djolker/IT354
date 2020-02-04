@@ -6,6 +6,22 @@ div {
   margin: 3px;
 }
 
+p {
+  font-family: sans-serif;
+}
+
+code {
+  font-family: monospace;
+}
+
+.panel {
+  background-color:#8cc25e;
+}
+
+#headrow {
+  background-color: #bcecdf;
+}
+
 .fill {
     display: flex;
     justify-content: center;

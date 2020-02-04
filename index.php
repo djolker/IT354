@@ -2,16 +2,14 @@
   <head>
     <title>DJ Olker Assignment Repo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <br>
-
-<?php include 'header.inc.php' ?>
+    <?php include 'inc/header.inc.php' ?>
 
     <div class="container">
       <div class="fill col-md-12">
-      <img src="IMG_2044.jpeg" >
+      <img src="images/IMG_2044.jpeg" >
     </div>
       <div class="row">
         <div class="col-md-3 panel" style="background-color:#8cc25e;">
