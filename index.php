@@ -24,6 +24,14 @@
           <br>
           <blockquote>The purpose of this website is to server a series of examples based on the curriculum of IT 354.</blockquote>
         </div>
+        <div class="col-md-3 panel">
+          <h4>Class Topics</h4>
+          <ul>
+            <li><a href="valuesandtypes.php">Values and Types</a></li>
+            <li><a href="unaryoperators.php">Unary Operators</a></li>
+            <li><a href="hoisting.php">Values and Types</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
