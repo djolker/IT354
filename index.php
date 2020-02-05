@@ -30,6 +30,10 @@
             <li><a href="hoisting.php">Values and Types</a></li>
           </ul>
         </div>
+        <div class="col-md-3 panel">
+          <h4>Videos</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/c_FYZSrnhbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </body>
