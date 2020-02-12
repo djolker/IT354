@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Week 4 and 5 Topics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function(){
+        $("#header").load("inc/header.shtml");
+      });
+    </script>
+
+
+  </head>
+  <body>
+
+<div id="header"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Week 4 and 5 Topics</h4>
+        </div>
+
+        <div class="col-md-7 panel">
+          <h5>Named Functions<h5>
+          <p>Named functions are implementations of a function that includes
+          stating the variables name, accepted variables, and immediately
+          assigning logic to a variable of that functions name</p>
+
+          <code>
+            function addFive(x){<br>
+              &nbsp;return x + 5;<br>
+            }<br>
+            &nbsp;<br>
+            console.log(addFive(12));
+          </code>
+          <br>
+          <h5>Function Expressions<h5>
+          <p>This is a method of implementing functions where the function
+            variable is instantiated and then the function value is assigned
+            to it</p>
+
+          <code>
+              let addFive = function(x){ <br>
+              &nbsp;return x + 5;<br>
+              }<br>&nbsp;<br>
+
+              console.log(addFive(12));
+          </code>
+          <h5>Arrow Functions<h5>
+          <p>Similar to a function expression, arrow functions allow you
+          to instantiate a variable and assign its logic in one line using the
+          syntax below.</p>
+
+          <code>
+            var addFive = (x) => {return x + 5};<br>&nbsp;<br>
+
+            console.log(addFive(12));
+          </code>
+
+          <h5>Optional Arguments<h5>
+          <p>Arguments in functions can have default values set for them, so
+          as to make their inclusion optional when called.</p>
+
+          <code>
+            function addFive(x = 1) {<br>
+              &nbsp;return x + 5;<br>
+            }<br>&nbsp;<br>
+
+            console.log(addFive(12));<br>&nbsp;<br>
+
+            console.log(addFive());
+          </code>
+          <br><br>
+
+          <p>The above code will output 17 when 12 is passed, and 6 when nothing
+            is passed, because the default value of X in this case is 1</p>
+
+          <h5>Rest Parameters<h5>
+          <p>Sometimes you may want to perform a function on an unknown number of
+          parameters. This is when you would use a rest parameter while defining
+          your function. A rest parameter allows for n number of objects to be
+          passed into the function on call, and treated as an array.</p>
+
+          <code>
+            function addTogether(...x) {<br>
+              &nbsp;var total = 0;<br>
+              &nbsp;for(i of x) { <br>
+                &nbsp;&nbsp;total += i;<br>
+              &nbsp;}<br>
+              &nbsp;return total;<br>
+            }<br>&nbsp;<br>
+
+            console.log(addTogether(0, 5, 10));
+          </code>
+
+
+          <h5>Nested Functions<h5>
+          <p>In javascript, you have the ability to nest one function inside another
+          by simply defining a new function during the definition of another.</p>
+
+          <code>
+            function addTwentyFive(x) {<br>
+              &nbsp;function addFive(y) {<br>
+                &nbsp;&nbsp;return y + 5;<br>
+              &nbsp;}<br>&nbsp;<br>
+
+&nbsp;              x = addFive(x);<br>
+      &nbsp;        x = addFive(x);<br>
+            &nbsp;  x = addFive(x);<br>
+        &nbsp;      x = addFive(x);<br>
+              &nbsp;x = addFive(x);<br>&nbsp;<br>
+
+            &nbsp;  return x;<br>
+            }<br>&nbsp;<br>
+
+            console.log(addTwentyFive(12));
+          </code>
+
+          <h5>Scope<h5>
+          <p>Variables have an inside out view of eachother in code, meaning
+          that an object on the innermost layer of a function can see the
+          variables on the outside, but the outside objects can't see in.</p>
+
+          <code>
+            var outsideString = "Outside of function";<br>&nbsp;<br>
+
+            function scopeTest() {<br>
+              var insideString = "Inside of function";<br>
+              console.log(outsideString);<br>
+              console.log(insideString);<br>
+            }<br>&nbsp;<br>
+
+            scopeTest();<br>&nbsp;<br>
+
+            console.log(outsideString);<br>
+            console.log(insideString);
+
+          </code>
+<br><br>
+          <p>The last line of the above code will return an error, as it does
+            not have visibility of the variable insideString due to it being
+            inside the function<p>
+
+        </div>
+
+        <div class="col-md-4 panel">
+<iframe width="400" height="157" src="https://www.youtube.com/embed/TCqJ3rXaiiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
