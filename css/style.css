@@ -10,10 +10,6 @@ p {
   font-family: sans-serif;
 }
 
-code {
-  font-family: monospace;
-}
-
 .panel {
   background-color:#8cc25e;
 }
@@ -33,3 +29,44 @@ code {
     max-width: 100%;
     max-height: 100%;
 }
+
+
+/* Code Styles
+
+    Credit to curiositalabs.com
+    http://curiositalabs.com/2013/03/how-to-style-your-code-snippets/
+    
+ */
+pre {
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word;}
+
+code {
+font-family: Courier, 'New Courier', monospace;
+font-size: 12px;}
+
+#codeStyler {
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+margin: 1em 0;}
+
+.computerGreen {
+background-color: #ededda;
+color: green;}
+
+pre.code {
+      white-space: pre-wrap;
+  }
+  pre.code:before {
+      counter-reset: listing;
+  }
+  pre.code code {
+      counter-increment: listing;
+  }
+  pre.code code:before {
+      content: counter(listing) " | ";
+      color: black;
+  }
