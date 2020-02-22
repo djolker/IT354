@@ -18,6 +18,10 @@ p {
   background-color: #bcecdf;
 }
 
+#pageHeader {
+  display: inline;
+}
+
 .fill {
     display: flex;
     justify-content: center;
