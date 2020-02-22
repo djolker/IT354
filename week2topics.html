@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Week 2 Topics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function(){
+        $("#header").load("inc/header.shtml");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Week 2 Topics</h4>
+        </div>
+
+      <div class="col-md-7 panel">
+        <h5>Values and Types<h5>
+        <p>Variables are a basic part of any programming language. In JavaScript,
+        variables have both a VALUE and a TYPE. The value is the data stored
+        in the variable, while the type helps define how to use said data.</p>
+
+        <div id="codeStyler">
+          <pre class="computerGreen code">
+  <code>var stringVariable = "Hello World";</code>
+  <code>var intVariable = 4;</code>
+  <code>var boolVariable = false;</code>
+  <code></code>
+  <code>var stringArray = stringVariable.split(" ");</code>
+  <code></code>
+  <code>console.log(stringArray);</code>
+  <code>console.log(++intVariable);</code>
+  <code>console.log(!boolVariable);</code>
+          </pre>
+        </div>
+        <h5>Unary Operators</h5>
+        <p>Unary Operators are operations used with only one operand (object
+          be operated on). They're used as quick ways to affect a variable while
+          keeping the code uncluttered and easy to read.</p>
+
+        <div id="codeStyler">
+          <pre class="computerGreen code">
+  <code>var x = 1;</code>
+  <code>x++;</code>
+  <code>console.log(x);</code>
+  <code></code>
+  <code>x--;</code>
+  <code>console.log(x);</code>
+  <code></code>
+  <code>var y = false;</code>
+  <code>console.log(!y);</code>
+          </pre>
+        </div>
+        <h5>Hoisting</h5>
+        <p>Traditionally, variables are instatiated in the order that the script
+        defines them by reading and executing code from top to bottom. However,
+        JavaScript uses a process called "Hoisting" to instantiate all Variables
+        first, then executing any other code. This allows for code to use
+        variables that have not been defined yet.</p>
+
+        <div id="codeStyler">
+          <pre class="computerGreen code">
+  <code>x = 20;</code>
+  <code>console.log(x);</code>
+  <code>x++;</code>
+  <code>console.log(x);</code>
+  <code>var x;</code>
+          </pre>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

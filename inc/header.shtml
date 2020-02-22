@@ -15,7 +15,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#">About</a></li>
+              <li><a href="week2topics.html">Week 2 Topics</a></li>
               <li><a href="week4and5topics.html">Week 4 and 5 Topics</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>

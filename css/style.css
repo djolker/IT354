@@ -35,7 +35,7 @@ p {
 
     Credit to curiositalabs.com
     http://curiositalabs.com/2013/03/how-to-style-your-code-snippets/
-    
+
  */
 pre {
 white-space: pre-wrap;
@@ -67,6 +67,6 @@ pre.code {
       counter-increment: listing;
   }
   pre.code code:before {
-      content: counter(listing) " | ";
+      content: counter(listing, decimal-leading-zero) " | ";
       color: black;
   }
