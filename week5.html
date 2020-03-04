@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Week X Topics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function(){
+        $("#header").load("inc/header.shtml");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Week 5 Topics</h4>
+        </div>
+
+        <div class="col-md-7 panel">
+          <h5>Objects<h5>
+          <p>Objects in JavaScript are any data type that can be instantiated. This includes basic data types like strings and integers, along with scripted class data types.  </p>
+
+          <p>Objects can be instantiated using the "new" keyword.
+
+          <div id="codeStyler">
+            <pre class="computerGreen code">
+<code>var instantiatedString = new String("Hello World");</code>
+<code></code>
+<code>console.log(instantiatedString);</code>
+<code></code>
+<code>var instantiatedInt = new Number(4);</code>
+<code></code>
+<code>console.log(instantiatedInt);</code>
+            </pre>
+          </div>
+
+          <p>Objects can be accessed and set in a number of ways. Below is an example of two concepts, literal notation and bracket notation.  The variable 'dog' is being instantiated using literal notation, setting the type, age and name in the first line. It's being accessed multiple times to build the string using bracket notation, where the feature name is given as the key</p>
+
+          <div id="codeStyler">
+            <pre class="computerGreen code">
+<code>var dog = {type: "Beagle", age: 5, name:"Sophie"};</code>
+<code></code>
+<code>console.log(dog['name'] + " is a " + dog['age'] + " year old " + dog['type']);</code>
+            </pre>
+          </div>
+
+          <p>The instatiation of an object can be apart of a function as well by creating an object constructor. This allows for logic to be implemented into the instantiation process</p>
+
+          <div id="codeStyler">
+            <pre class="computerGreen code">
+<code>function dog(type, age, name) {</code>
+<code>  this.type = type;</code>
+<code>  this.age = age;</code>
+<code>  this.name = name;</code>
+<code>}</code>
+<code></code>
+<code>var a = new dog("Beagle", 5, "Sophie");</code>
+<code></code>
+<code>console.log(a['name'] + " is a " + a['age'] + " year old " + a['type']);</code>
+            </pre>
+          </div>
+
+          <p>Objects can also be created as a part of a class. This is similar to just using a constructor, except more dynamic features like methods are capable of being used</p>
+
+          <div id="codeStyler">
+            <pre class="computerGreen code">
+<code>class Dog {</code>
+<code>  constructor(type, age, name) {</code>
+<code>    this.type = type;</code>
+<code>    this.age = age;</code>
+<code>    this.name = name;</code>
+<code>  }</code>
+<code></code>
+<code>  bark() {</code>
+<code>    console.log("Bark!");</code>
+<code>  }</code>
+<code>}</code>
+<code></code>
+<code>a = new Dog("Beagle", 5, "Sophie");</code>
+<code></code>
+<code>console.log(a['name'] + " is a " + a['age'] + " year old " + a['type']);</code>
+<code></code>
+<code>a.bark();</code>
+            </pre>
+          </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+</html>
