@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Week 7 Topics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+      $(function(){
+        $("#header").load("inc/header.shtml");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Week 7 Topics</h4>
+        </div>
+
+        <div class="col-md-7 panel">
+          <h5>Prototypal Inheritance<h5>
+          <p>Prototypes are objects created for the use of applying a set of attributes to multiple other objects.
+              They act as the parent object, providing default values for the child object that can be overwritten if need be.
+            In the below example, all animals will have legs, but specific animals like "dog" will apply the number of legs on their own.</p>
+
+          <div id="codeStyler">
+            <pre class="computerGreen code">
+
+<code>let animal = {
+  hasLegs: true
+};
+
+let dog = {
+  legCount: 4
+};
+
+dog.__proto__ = animal;
+
+console.log(dog.hasLegs);
+console.log(dog.legCount);</code>
+
+            </pre>
+          </div>
+
+          <p>Functions can be passed through inheritance as well. In the below
+          example, we can see that not only is "dog" gaining the ability to use the
+          method "eat", but the "eat" method also is accessing an attribute
+          only available in "dog" using the keyword 'this'</p>
+
+          <div id="codeStyler">
+            <pre class="computerGreen code">
+<code>let animal = {
+  hasLegs: true,
+  eat() {
+    console.log( this.name + " eats!");
+  }
+};
+
+let dog = {
+  name:"Sophie",
+  legCount: 4
+};
+
+dog.__proto__ = animal;
+
+console.log(dog.hasLegs);
+console.log(dog.legCount);
+
+dog.eat();</code>
+            </pre>
+          </div>
+
+          <p>The keyword 'this' is used to refer to a couple of contexts of your
+            script like the current object or class, but it can also refer to
+            larger scale objects outside of your own scripts functionality. This
+            is due to it refering to the Window object</p>
+
+      </div>
+    </div>
+  </body>
+</html>
