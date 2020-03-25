@@ -1,0 +1,66 @@
+<html>
+ <head>
+   <title>Article 4: Microservice vs Monolithic</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="css/style.css" />
+
+   <!-- <script  src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+
+   <script>
+     $(function(){
+       $("#header").load("inc/header.shtml");
+     });
+   </script>
+ </head>
+
+ <body>
+   <div id="header"></div>
+
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <h4>Article 4: Microservice vs Monolithic</h4>
+       </div>
+       <div class="col-md-7 panel">
+          <p>When planning the design of an application or suite of services,
+          two main design paths exist for the overall structur, Microservices
+          and a Monolithic model. </p>
+
+          <h2>Monolithic Model</h2>
+
+          <p>The monolithic model is an architecture in which all necessary
+            services and resources are built together into one large package.
+          This can be a good thing, as it will be simple to maintain early on,
+          and save time on redundancies for things like monitoring and security.
+        However long term the Monolithic model can become difficult to scale
+          and impossible to adapt to changes in technology.</p>
+
+          <h2>Microservice Model</h2>
+
+          <p>The Microservice model takes each branch of an application and turns
+            it into it's own independent resource. This can take the form of
+            breaking out the database, front end, and back end services into
+            seperate projects with their own release and development cycles. This
+            can be benificial in the long run, as it's much easier for each project
+            to scale on its own rather than needing to grow in context of the rest
+            of the project. </p>
+
+          <p>While it may be much easier to maintain a microservice model application,
+            it comes out to be much more work, as each service will need its own
+            security and monitoring work dealt with.</p>
+
+            <h2>Choosing between the two</h2>
+
+            <p>Choosing one architecture over another in this case will come down
+              to your needs and available resources. If this is an application with
+              the intention of scaling greatly over time, building a Microservice
+              model will be the best choice. If the project won't need to scale
+              over time, and may not change much as it's added to, a Monolithic
+              model may be worth building due to the amount saved in resources
+              </p>
+
+       </div>
+ </body>
+</html>
