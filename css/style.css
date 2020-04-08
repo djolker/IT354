@@ -36,7 +36,7 @@ p {
 }
 
 
-/* Code Styles
+/* code Styles
 
     Credit to curiositalabs.com
     http://curiositalabs.com/2013/03/how-to-style-your-code-snippets/
@@ -72,6 +72,20 @@ pre.code {
       counter-increment: listing;
   }
   pre.code code:before {
+      content: counter(listing, decimal-leading-zero) " | ";
+      color: black;
+  }
+
+pre.xmp {
+      white-space: pre-wrap;
+  }
+  pre.xmp:before {
+      counter-reset: listing;
+  }
+  pre.xmp xmp {
+      counter-increment: listing;
+  }
+  pre.xmp xmp:before {
       content: counter(listing, decimal-leading-zero) " | ";
       color: black;
   }

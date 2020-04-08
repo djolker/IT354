@@ -19,6 +19,8 @@
                   <li><a href="week4and5topics.html">Week 3 and 4 Topics</a></li>
                   <li><a href="week5.html">Week 5 Topics</a></li>
                   <li><a href="week7.html">Week 7 Topics</a></li>
+                  <li><a href="Modules.html">Modules</a></li>
+                  <li><a href="HigherOrderFunctions.html">Higher Order Functions</a></li>
                   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       <li><a href="Article1.html">ECMAScript</a></li>

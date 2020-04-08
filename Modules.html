@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Modules</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+      $(function(){
+        $("#header").load("inc/header.shtml");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Modules</h4>
+        </div>
+
+        <div class="col-md-7 panel">
+          <h5>Modules<h5>
+          <p>Modules are an important tool used for to keep your codebase organized and readable, especially when as it grows into
+          a larger and larger project. They allow you to split your code into self contained chunks that can be updated independently
+          and reused all over the project without writing redundant code.</p>
+
+          <p>This short example will show how code can be broken out into multiple scripts, and then brought back together to function
+            as one cohesive app.  We'll be using 3 files; index.html, main.js, and dog.js</p>
+
+            <hr>
+
+          <p>In index.html, we'll just be creating the skeleton and adding our main.js script file, making sure to set the 'type' to
+            module in the script tag</p>
+
+          <div id="codeStyler">
+            <pre class="computerGreen code">
+<xmp>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Module Example</title>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+
+  </body>
+</html>
+</xmp>
+
+              </pre>
+            </div>
+
+            <p>Next we setup our dog.js page. This will be the module getting imported in for use. I'm just creating a quick script
+              that will take in a name and age for a new dog object, and have the ability to print out the info on the dog object.</p>
+
+              <div id="codeStyler">
+                <pre class="computerGreen code">
+<code>export default class Dog {</code>
+<code>  constructor(name, age) {</code>
+<code>    this.name = name</code>
+<code>    this.age = age</code>
+<code>  }</code>
+<code>}</code>
+<code></code>
+<code>export function printInfo(dog) {</code>
+<code>  console.log(`${dog.name} is ${dog.age} years old!`)</code>
+<code>}</code>
+                </pre>
+              </div>
+
+            <p>By using the export command before both the class and function, we allow them to be imported to our main.js file.
+                Scopes of code not marked for export can't be seen by the importing script.</p>
+
+            <p>Last we'll be creating the main.js file that our index is calling for. Main will be importing our Dog module, then
+            creating an object using it's class structure, and using it's function to print out info on the newly created dog object</p>
+
+            <div id="codeStyler">
+              <pre class="computerGreen code">
+<code>import Dog, {printInfo as printInfo} from '/ModulesExample/dog.js'</code>
+<code></code>
+<code>const dog = new Dog("Sophie", 4)</code>
+<code></code>
+<code>printInfo(dog) </code>
+              </pre>
+            </div>
+
+            <p>The output from visiting index.html should look something like this:</p>
+            <img src="images/dogjsoutput.png" width="100%" />
+        </div>
+      </div>
+  </body>
+</html>
