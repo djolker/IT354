@@ -1,0 +1,66 @@
+<html>
+ <head>
+   <title>Article 5: The Mitt Romney Web Font Problem</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="css/style.css" />
+
+   <!-- <script  src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+
+   <script>
+     $(function(){
+       $("#header").load("inc/header.shtml");
+     });
+   </script>
+ </head>
+
+ <body>
+   <div id="header"></div>
+
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <h4>Article 5: The Mitt Romney Web Font Problem</h4>
+       </div>
+       <div class="col-md-7 panel">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;When a website uses multiple fonts together, it can create what's
+          called a Flash of Invisible Text. In browser, this will look like your website loading fully
+          except for the text. Blocks of space will be made for the text, but nothing will render at first.
+          Then after a moment, the text blocks will pop in.</p>
+
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;These missing blocks of text are caused happens when the browsers
+            detects custom fonts being called for in CSS and has to download them before rendering text.
+            In 2015, this lead to a problem dealing with Mitt Romneys possible run for the presidency.</p>
+
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;The full title of the following headline is "Mitt Romney is Officially
+            Not Running for President"</p>
+
+            <figure>
+              <img src="images/foit.jpg" width="100%" />
+              <figcaption>Credit James Muspratt</figcaption>
+            </figure>
+          </br>
+
+
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;For a brief moment when someone came to read this article from slate.com,
+            before the bold font loaded and rendered, the headline stated that Mitt Romney would be running
+            for president.  This could certainly cause some reader confusion as they may notice that the
+            headline states something different than what they originally clicked on, or that the article
+            didn't exactly match what they originally read the headline to be.  Furthermore, it looks
+            unpolished for there to be empty gaps of space during load time where content clearly should go.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;This was just one example, but the same problem could apply to any number
+              of other situations. Often times things like dates and adjectives will be put in different font
+              styles to make them stand out more, but these critical parts of the sentence could be invisible
+              on the users first impression due to those very stylings.</p>
+
+
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Zach offers a couple solutions to this problem, including defining a default font type all browsers
+            have so that a placeholder text of an available font will display rather than empty space. My preferred
+            solution was on the browser level though, asking that web browser developers define default fonts on
+            a global level, so that this issue is resolved on all websites, not just those that implement their
+            own fixes</p>
+       </div>
+ </body>
+</html>
